@@ -3,7 +3,7 @@
 
 ### Materials to be covered would be posted here
 #### Try to make proper documentation of whatever you learn in your own words week-wise, so that you can refer back the same in future
-#### 16-04-2021, Friday
+#### Checkpoint 1 (Start day: 16-04-2021, Friday)
 - [What is Github](https://www.youtube.com/watch?v=uUuTYDg9XoI)
 - [Github Basics](https://guides.github.com/activities/hello-world/)
 - [Markdown Quickguide](https://www.youtube.com/watch?v=bpdvNwvEeSE)
