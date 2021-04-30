@@ -29,10 +29,10 @@ _**underscores**_ __underscores__ *__underscores__* **asterisks and _underscores
    For indentation atleast 1 leading space. Next sentence will be in the next line 'cause 2 trailing spaces.    
    Hehe. 
    
- [Random link](https://www.google.com/ "Try me")
- [More randomness][1]
- [Random reference][this reference]
- [1]: https://www.google.com/
+ [Random link](https://www.google.com/ "Try me")  
+ [More randomness][1]  
+ [Random reference][this reference]  
+ [1]: https://www.google.com/  
  [this refernece]: https://www.google.com/
 
 pic?
