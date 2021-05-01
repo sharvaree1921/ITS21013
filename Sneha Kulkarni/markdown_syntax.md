@@ -39,7 +39,7 @@ upto 6
    
  
 ### Lists: 
-    Ordered list:  
+##### Ordered list:  
         1. List 1  
         2. List 2  
         3. List 3   
@@ -48,8 +48,8 @@ upto 6
              1. List 4 (This will appear as 1 because of the indentation)
              
         
-       
- - Lists: Unordered list: (* or - or + )  
+   
+##### Unordered list: (* or - or + )  
  
  - List 1
         
