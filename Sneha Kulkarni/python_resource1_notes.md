@@ -13,8 +13,7 @@ Start with #
 ## Strings:
 - "text" or 'text', `print()` for output.
 
-#### escaping single quote or double quote
-- The character `\` is used to escape quotes.
+#### escaping single quote or double quote `\`
 - For output, The string is enclosed in double quotes if the string contains a single quote and no double quotes, otherwise it is enclosed in single quotes.
 ```python
 >>> 'doesn\'t'
