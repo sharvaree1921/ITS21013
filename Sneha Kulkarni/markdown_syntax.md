@@ -19,7 +19,7 @@ upto 6
     ![name of the image](link to the image)  
     ![name of the image "text"](Link)
 
-### Code and syntax highlisghting: 
+### Code and syntax highlighting: 
                 There are 2 options:  
                 1. For just one word, eg for. Then: use ` ` signs. eg: `for`  
                 2. For an entire code:
@@ -64,7 +64,7 @@ upto 6
           Note: for new line without new paragraph, end the above paragraph with two trailing spaces.
           (3 spaces) New line without a new paragraph ie. 2nd paragraph part2.
        
- - Horizontal lines:
+ ### Horizontal lines:
     2 ways: 
  ---
  
