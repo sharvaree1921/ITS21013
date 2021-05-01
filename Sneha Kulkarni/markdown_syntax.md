@@ -8,36 +8,37 @@ upto 6
 
 -Scratching: use ~~ signs before and after the text. eg: ~~Scratch~~  
 
--Links:  
+### Links:  
    Format : []()  
    [name of the website](Link to the website)  
    Modification: To make appear some 'text' when you move your cursor to the name of the website,  
    [name of the website "text"](Link to the website)
        
--Image:
-  
-   Format: ![]()  
-   ![name of the image](link to the image)  
-   ![name of the image "text"](Link)
+### Image:
+    Format: ![]()  
+    ![name of the image](link to the image)  
+    ![name of the image "text"](Link)
 
--Code and syntax highlisghting: There are 2 options:  
+### Code and syntax highlisghting: 
+                There are 2 options:  
                 1. For just one word, eg for. Then: use ` ` signs. eg: `for`  
                 2. For an entire code:
                    ``` name of the language  
                        actual code  
                    ```
                    
- -Tables: 
+ ### Tables: 
  
 |header 1 |column 2 |column 3|    
 |---|---|---|                  
 |text1 |text2 |text3 |
 
-- Quotes: 
+### Quotes: 
+   Start with >
    >The quote
    
  
- -Lists: 
+### Lists: 
     Ordered list:  
         1. List 1  
         2. List 2  
