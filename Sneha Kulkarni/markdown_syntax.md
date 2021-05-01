@@ -16,9 +16,9 @@ upto 6
        
 -Image:
   
-   Format: ! []()  
-   ! [name of the image](link to the image)  
-   ! [name of the image "text"](Link)
+   Format: ![]()  
+   ![name of the image](link to the image)  
+   ![name of the image "text"](Link)
 
 -Code and syntax highlisghting: There are 2 options:  
                 1. For just one word, eg for. Then: use ` ` signs. eg: `for`  
