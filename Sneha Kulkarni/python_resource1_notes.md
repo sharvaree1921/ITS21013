@@ -1,6 +1,4 @@
-## Comments:
-Start with #
-
+> Date: 1/05/2021
 ## Numbers:
 - All normal operators, parentheses (()) for grouping, % for remainder, ** for power.
 - Division (/) always returns float value. To discard fractional part, use //. 
@@ -49,10 +47,11 @@ One\nTwo
 - `+` and `*` 
 ```python
 >>> 3 * 'a' + 'b'
-'aaab'      
->>> prefix = 'Py'
->>> prefix + 'thon'
-'Python'
+'aaab' 
+>>> print('Enter your name:')
+x = input()           #Note this input func
+print('Hello, ' + x)
+
 >>> 'Py' 'thon'
 'Python'        #**(note that this only works with literals and no expressions/variable)**
 ```
@@ -94,3 +93,85 @@ One\nTwo
 >>> x[0][1]
 'b'
 ```
+> Date: 2/05/2021
+# Control Flow tools
+#### if,elif,for,range:
+```python
+#format for if/elif
+if/elif (condition):       #brackets not necessary
+                (outcome)
+#for iterates over items of any sequence
+numbers = [1,2,3]
+for n in numbers:
+      (any operation)
+```
+- `range(10)` gives values from 0 to 9
+- `range(4,7)` gives 4,5,6
+- `range(n1,n2,d)` (n1,n2,d are integers) gives numbers starting from n1 upto n2(excluded) with common diff d.
+- soem operations on range function:
+```python
+#Input
+print(range(10))      #output: range(0,10)
+sum(range(4))         #output: 6
+list(range(4))        #output: [0,1,2,3]
+```
+#### break,continue,pass:
+- break and continue same like C++ (`break` breaks out of the innermost enclosing `for` or `while` loop.
+- `pass` does nothing!
+      
+## Function Definition
+```python
+#format:
+def function_name(parameters)
+    """documentation of the function"""   # optional, indented
+    body of the function                  #indented
+```
+- Default argument values : eg: `def ask_ok(prompt, retries=4, reminder='Please try again!')`
+Here function can be called in 3 ways: 1 with only the compulsory argument ie `propmt`, 2nd with `prompt` and `retries(with value other than 4 as well)` and 3rd with all 3.
+#### Important example to understand keyword arguments:
+- Keyword arguments must follow positional arguments.
+```python
+def parrot(voltage, state='a stiff', action='voom', type='Norwegian Blue'):
+    print("-- This parrot wouldn't", action, end=' ')
+    print("if you put", voltage, "volts through it.")
+    print("-- Lovely plumage, the", type)
+    print("-- It's", state, "!")
+#allowed calls:
+parrot(1000)                                          # 1 positional argument
+parrot(voltage=1000)                                  # 1 keyword argument
+parrot(voltage=1000000, action='VOOOOOM')             # 2 keyword arguments
+parrot(action='VOOOOOM', voltage=1000000)             # 2 keyword arguments
+parrot('a million', 'bereft of life', 'jump')         # 3 positional arguments
+parrot('a thousand', state='pushing up the daisies')  # 1 positional, 1 keyword
+```
+#### Special parameters:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
