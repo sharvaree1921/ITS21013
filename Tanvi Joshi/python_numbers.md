@@ -9,7 +9,7 @@ just type the code as it is
 - `+`, `-`, `*`, `/`(returns answer in float) are the normal operators
 - `//` does floor division(returns only quotient)
 - `%` returns remainder of the division
-- `**` used for powers ( `x ** y` means x^(y) )
+- `**` used for powers ( `x ** y` means x^(y) ), has higher precedence than `-`, so `-3**2` is -9, `(-3)**2` is 9
 - `=` used to assign a value to a variable
 - variables should be assigned a value before use
 - last printed expression is assigned to the variable `_`
