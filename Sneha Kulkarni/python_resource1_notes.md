@@ -122,29 +122,32 @@ list(range(4))        #output: [0,1,2,3]
 ## Function Definition
 ```python
 #format:
-def function_name(parameters)
-    """documentation of the function"""   # optional, indented
+def function_name(parameters):
+    """documentation of the function"""   # optional, indented, if multi-line, leave one line blank between 2 lines.
     body of the function                  #indented
 ```
+- To print the docstring, use the command `print(function_name.__doc__)`
 - Default argument values : eg: `def ask_ok(prompt, retries=4, reminder='Please try again!')`
 Here function can be called in 3 ways: 1 with only the compulsory argument ie `propmt`, 2nd with `prompt` and `retries(with value other than 4 as well)` and 3rd with all 3.
-#### Important example to understand keyword arguments:
-- Keyword arguments must follow positional arguments.
+#### Systematic way to pass positional/keyword arguments in a function using `/` and `*`:
 ```python
-def parrot(voltage, state='a stiff', action='voom', type='Norwegian Blue'):
-    print("-- This parrot wouldn't", action, end=' ')
-    print("if you put", voltage, "volts through it.")
-    print("-- Lovely plumage, the", type)
-    print("-- It's", state, "!")
-#allowed calls:
-parrot(1000)                                          # 1 positional argument
-parrot(voltage=1000)                                  # 1 keyword argument
-parrot(voltage=1000000, action='VOOOOOM')             # 2 keyword arguments
-parrot(action='VOOOOOM', voltage=1000000)             # 2 keyword arguments
-parrot('a million', 'bereft of life', 'jump')         # 3 positional arguments
-parrot('a thousand', state='pushing up the daisies')  # 1 positional, 1 keyword
+def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):
+# Passing arguments in the above function:
+f(1,2,3 or kwd=3,kwd1=something,kwd2=something)
+#keyword areguments can be passed in any order.
 ```
-#### Special parameters:
+#### Variable number of arguments:
+- `def f(*arg)` : Variable number of non-keyword arguments.
+- `def f(**kwarg)` : Variable number of keyword arguments.
+#### Function annotations:
+- otpional data info of arguments and return values in user-defined fn.
+- format: `def f(arg1: type, arg2: type = particular_value) -> type_of_return_value:`
+-                             |
+                        optional argument.
+
+> Date: 4/05/2021
+# Data Structures:
+
 
 
 
