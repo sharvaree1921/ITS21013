@@ -15,5 +15,5 @@
 - slicing: get substrings, ( `word[0:2]` gives `'Py'` (characters 0(included) to 2(excluded)), `word[2:5]` gives `'tho'` (characters 2(included) to 5(excluded)) ); default: omitted 1st index means 0, omitted 2nd index means uptil and including end of string (`word[-2:]` gives `on`, -2 is 2nd last and NOT 3rd last)
 - out of range slice indexes are handled in slicing, strings cannot be changed (immutable), assigning to an indexed position in the string gives error
 - `len(string_name)` returns length of string
-###### functions:
+
 [functions on strings](https://docs.python.org/3/library/stdtypes.html#string-methods functions on strings)
