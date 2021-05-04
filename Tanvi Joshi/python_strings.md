@@ -16,4 +16,4 @@
 - out of range slice indexes are handled in slicing, strings cannot be changed (immutable), assigning to an indexed position in the string gives error
 - `len(string_name)` returns length of string
 
-[functions on strings](https://docs.python.org/3/library/stdtypes.html#string-methods functions on strings)
+[Functions](https://docs.python.org/3/library/stdtypes.html#string-methods functions on strings)
