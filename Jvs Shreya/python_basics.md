@@ -42,5 +42,72 @@ i)
 ```
 ### 1.2 Control Flow Terms
 
-* 
+* Same concept of loops like `while`, `for`, `if`, `elif` will apply. The `range()` lists all numbers between the given bracket. The `break` and `continue` statements can be used. `pass` statement is used to do nothing.
+* Functions are defined with `def`. No need to mention data-types.
+* Two kinds of arguments - keyword and positional arguments. Keyword arguments must always follow positional arguments. To separate them, use `/` (everything preceding this will be positional) and `*` (everything following this is keyword) . 
+* Use `*name` to take in a 'tuple' i.e. multiple positional arguments. Use `**name` to take multiple keywords.
+* `lambda` can be used to define small functions. Annotations are useful in documenting the program and keeping it organized.
+```python
+a,b = 0,1
+while a < 100 :
+  a,b = b,a+b
+  print(a, end=' ')
+  
+for n in range(2, 9):
+     for x in range(2, n):
+            if n % x == 0:
+                print(n, 'equals', x, '*', n//x)
+                break
+     else:
+         # loop fell through without finding a factor
+                print(n, 'is a prime number')
+                
+def cheeseshop(kind, *arguments, **keywords):
+    print("-- Do you have any", kind, "?")
+    print("-- I'm sorry, we're all out of", kind)
+    for arg in arguments:
+        print(arg)
+    print(arg[2])
+    print("-" * 40)
+    for kw in keywords:
+        print(kw, ":", keywords[kw])
+cheeseshop("Limburger", "It's very runny, sir.", [1,2,3,4], shopkeeper="Michael Palin", client="John Cleese", sketch="Cheese Shop Sketch")
 
+def make_incrementor(n):
+     return lambda x: x + n
+f = make_incrementor(10)
+f(3)
+
+def f(ham: str, eggs: str = 'eggs') -> str:
+     print("Annotations:", f.__annotations__)
+     print("Arguments:", ham, eggs)
+     return ham + ' and ' + eggs
+f('spam')
+```
+Output:
+```
+1 1 2 3 5 8 13 21 34 55 89 144 
+2 is a prime number
+3 is a prime number
+4 equals 2 * 2
+5 is a prime number
+6 equals 2 * 3
+7 is a prime number
+8 equals 2 * 4
+-- Do you have any Limburger ?
+-- I'm sorry, we're all out of Limburger
+It's very runny, sir.
+[1, 2, 3, 4]
+3
+----------------------------------------
+shopkeeper : Michael Palin
+client : John Cleese
+sketch : Cheese Shop Sketch
+13
+Annotations: {'ham': <class 'str'>, 'return': <class 'str'>, 'eggs': <class 'str'>}
+Arguments: spam eggs
+'spam and eggs'
+```
+### 1.3 Data Structures
+* Methods of lists:
+     * 
