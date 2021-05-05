@@ -109,5 +109,52 @@ Arguments: spam eggs
 'spam and eggs'
 ```
 ### 1.3 Data Structures
-* Methods of lists:
-     * 
+* Methods of lists(Note:- [] means optional):
+   * `append(x)` - adds at end, `extend(iterable)` - adds many at end, `insert(i, x)` - inserts in between, `remove(x)` - removes that value the first time it occurs, `pop([i])` - removes and returns value at that position, `clear()` - clears entire list, `index(x[, start[, end]])` - gives index of value x, `count(x)` - number of times x comes, `sort(\*, key=None, reverse=False)` - sorts list, `reverse()` - reverses list, `copy()` - same as a[:]
+* Lists can also be interpreted as stacks(append, pop) or queues(append, popleft i.e. first entry leaves).
+* Lists can be created in short forms()comprehensions using for and if. Ex:-  
+  ``` python 
+  [(x, y) for x in [1,2,3] for y in [3,1,4] if x != y]
+  ``` 
+  is equivalent to
+  ``` python
+  combs = []
+  for x in [1,2,3]:
+      for y in [3,1,4]:
+          if x != y:
+              combs.append((x, y))
+  combs
+  ```
+  Ex 2 :-
+  ``` python
+  matrix = [
+     [1, 2, 3, 4],
+     [5, 6, 7, 8],
+     [9, 10, 11, 12],
+  ]
+  [[row[i] for row in matrix] for i in range(4)]
+  ```
+  Output:
+  ```
+  [[1, 5, 9], [2, 6, 10], [3, 7, 11], [4, 8, 12]]
+  ```
+  (The `zip()` function does the above thing)
+* `del` deletes stuff without returning.
+* Tuples can contain multiple values of any data-type. For empty tuple - `()`, for singleton end with comma. Values of a defined tuple cannot be changed. They can be unpacked like this:- ` x, y, z = t` where t can be `[23,4,'hi']`.
+* Sets are unordered collection made by `{1,2,3}` or `set(1,2,3)`.  For empty set - `set()`. If a,b are sets,
+   * **a - b** - in a but not b, **a | b** - union, **a & b** - intersection, **a ^ b** - a or b but not both.
+* Dictionaries are a set of *(immutable) keys : value* pairs. `list(d)` give list of all keys. `dict()` constructor creates dictionary from a comprehension. 
+* `.items()` is used to get both the pairs in loops. `'reversed()'` and `sorted()` can e used for sequences in loops. Sequences can be compared in lexicographic order.
+ ```
+ questions = ['name', 'favorite color']
+ answers = ['lancelot', 'blue']
+ for q, a in zip(questions, answers):
+     print('What is your {0}?  It is {1}.'.format(q, a))
+ ```
+ Output:
+ ```
+ What is your name?  It is lancelot.
+ What is your favorite color?  It is blue.
+ ```
+ ### 1.4 Modules
+ * 
