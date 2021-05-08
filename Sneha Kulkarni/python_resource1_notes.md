@@ -81,6 +81,7 @@ print('Hello, ' + x)
 >>> squares
 [3,4,5,16,25]
 ```
+- Another way to create the same initial list square is:`squares = list(map(lambda x: x**2, range(10)))` or  `squares = [x**2 for x in range(10)]` 
 - nesting
 ```python
 >>> a = ['a', 'b', 'c']
