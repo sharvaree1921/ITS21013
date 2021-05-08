@@ -19,3 +19,5 @@
 [Functions](https://docs.python.org/3/library/stdtypes.html#string-methods "functions on strings")
 ##### lists:
 - they are mutable(elements can be changed), unlike strings
+- The keyword argument end can be used to avoid the newline after the output
+- You can also add new items at the end of the list, by using the append()
