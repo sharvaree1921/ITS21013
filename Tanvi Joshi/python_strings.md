@@ -17,3 +17,5 @@
 - `len(string_name)` returns length of string
 
 [Functions](https://docs.python.org/3/library/stdtypes.html#string-methods "functions on strings")
+##### lists:
+- they are mutable(elements can be changed), unlike strings
