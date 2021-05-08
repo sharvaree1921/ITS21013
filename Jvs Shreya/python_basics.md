@@ -1,4 +1,4 @@
-## Python Basics
+# Python Basics
 Date: 30-04-2021, Time: 12:44
 
 ### 1.1 Numbers, Strings, Lists
@@ -164,4 +164,28 @@ Arguments: spam eggs
     import sys
     mod(int(sys.argv[1]))
     ```
- * 
+ * When we import a module, python first searches the directory, _path_ variable, and then installation-dependent default. After initialization, Python programs can modify sys.path by putting the directory name at the start of the address.
+ *  Python caches the compiled version of each module in the  __ pycache __ directory under the name module.version.pyc, where the version gives the Python version used.
+ *  Python has some default modules and libraries like `sys`. The `dir()` function lists all names(except built-in functions) defined in that module. For built-in, use `import builtins` and then `dir(builtins)`.
+ *  Packages structure the modules. These are done in a dotted format. Ex:-  
+    ```python
+    ITSP/
+         __init__.py
+         python/
+                __init__.py
+                basics.py
+                libs.py
+                ...
+         ml/
+            __init__.py
+            images.py
+    ```
+    And to access libs, use `import ITSP.python.libs`. Again, `from` ... `import` can be used.
+ *  When * is used while importing a package, it will import all the sub-modules only if `__all__` is defined in `__init__.py`and it contains all the sub-modules. Else, it will import only till the package level.  
+
+    >__Note:- Using * to import all is *not* recommended.__
+ *   When a module is already imported from a package, but you want another module from same package, you can just use dots. `from . import func2`.
+> 09-05-2021, 00:21 AM
+
+### 1.5 Input and Output
+* 
