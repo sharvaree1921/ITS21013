@@ -144,8 +144,8 @@ Arguments: spam eggs
 * Sets are unordered collection made by `{1,2,3}` or `set(1,2,3)`.  For empty set - `set()`. If a,b are sets,
    * **a - b** - in a but not b, **a | b** - union, **a & b** - intersection, **a ^ b** - a or b but not both.
 * Dictionaries are a set of *(immutable) keys : value* pairs. `list(d)` give list of all keys. `dict()` constructor creates dictionary from a comprehension. 
-* `.items()` is used to get both the pairs in loops. `'reversed()'` and `sorted()` can e used for sequences in loops. Sequences can be compared in lexicographic order.
- ```
+* `.items()` is used to get both the pairs in loops. `'reversed()'` and `sorted()` can be used for sequences in loops. Sequences can be compared in lexicographic order.
+ ```python
  questions = ['name', 'favorite color']
  answers = ['lancelot', 'blue']
  for q, a in zip(questions, answers):
@@ -157,4 +157,11 @@ Arguments: spam eggs
  What is your favorite color?  It is blue.
  ```
  ### 1.4 Modules
+ * These are like header files in cpp. Use `import` to call them. To get specific functions from module, use `from` mod `import` func. To import all funcs, use `*`. To change the name, use `as`.
+ * To run a module as a *script* use the following code:  
+    ```python
+    if __name__ == "__main__":
+    import sys
+    mod(int(sys.argv[1]))
+    ```
  * 
