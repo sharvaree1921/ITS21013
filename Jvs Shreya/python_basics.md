@@ -145,6 +145,7 @@ Arguments: spam eggs
    * **a - b** - in a but not b, **a | b** - union, **a & b** - intersection, **a ^ b** - a or b but not both.
 * Dictionaries are a set of *(immutable) keys : value* pairs. `list(d)` give list of all keys. `dict()` constructor creates dictionary from a comprehension. 
 * `.items()` is used to get both the pairs in loops. `'reversed()'` and `sorted()` can be used for sequences in loops. Sequences can be compared in lexicographic order.
+* A boolean expression is evaluated from lest to right and is terminated when the result is determined. When a variable is assigned a boolean expression, it returns the last evaluated value. 
  ```python
  questions = ['name', 'favorite color']
  answers = ['lancelot', 'blue']
@@ -188,4 +189,43 @@ Arguments: spam eggs
 > 09-05-2021, 00:21 AM
 
 ### 1.5 Input and Output
+* To print values of variables, enclose them in {...} and put`f` or `F` before the start of the string. Another way:  
+   ```python
+   x,y,z='hello',5,'yay'
+   '{:8}. I got {:-7}. {:15}!'.format(x,y,z)
+   ```
+   Output:
+   ```
+   'hello   . I got       5. yay            !'
+   ```
+* The `str()` function simply prints the string form of the variable. The `repr()` functon includes backslashes and single quotes as part of text. Placeholders like `$x` can also be used.
+* Number after `:` tells min width of string. To convert, use - `!a` for ascii(), `!r` for repr(), `!s` for str(). Ex:  
+  ```python
+  table = {'Sjoerd': 4127, 'Jack': 4098, 'Dcab': 7678}
+  for name, phone in table.items():
+      print(f'{name:10} ==> {phone:10d}')
+  print('Jack: {0[Jack]:d}; Sjoerd: {0[Sjoerd]:d}; Dcab: {0[Dcab]:d}'.format(table)) 
+  #The [] gives access to key. Same output obtained when {Jack:d} and .format(**table) is used.
+      
+  print('The story of {1}, {0}, and {other}.'.format('Bill', 'Manfred', other='Georg')) 
+  
+  import math
+  print('The value of pi is approximately %5.3f.' % math.pi) #Here, 5 is width of string, 3 is precision. % replaces with value specified.
+  ```
+  Output:
+  ```
+  Sjoerd     ==>       4127
+  Jack       ==>       4098
+  Dcab       ==>       7678
+  Jack: 4098; Sjoerd: 4127; Dcab: 7678
+  The story of Manfred, Bill, and Georg.
+  The value of pi is approximately 3.142.
+  ```
+* `str.rjust(5)` right justifies with 5 places to the left. Similarly, `str.ljust()`, `str.center()`. `str.zfill(6)` makes sure there at least 6 chars in number by adding preceding zeroes.
+* To open a file, use `open('filename','r')`. Here the second char says what to do with file-  
+   * `r` - read(default), `w` - write(from scratch), `a` - append, `r+` - read and write
+* IMPORTANT: Normally files are read in txt form. But any file which contains other than text, use `'b'` to read it in binary format.
+* Use `with` keyword to always close a file. Or use file.close() at end. But always close a file!
+* `f.read()` reads entire file. `f.readline()` - each line. `list(f)` and `f.readlines()` reads all. `f.write('bla\n')` returns number of bytes entered. `f.tell()` gives currnet (bytes)position. `f.seek(offset, whence)` changes current position to offset + starting point which is start if whence is 0, current if 1 and end if 2.  
+  seek doesn't work well with text only files.
 * 
