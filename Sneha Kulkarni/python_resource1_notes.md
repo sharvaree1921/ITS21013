@@ -43,6 +43,7 @@ One\nTwo
 - **To prevent this, use `\` at the end of the line.**
 
 #### OPERATIONS ON STRINGS
+- `txt.strip()` removes all the spaces at the bginning and end of the string.
 - Lenth of a string: `len()` eg: `len('var')` will give output 3.
 - `+` and `*` 
 ```python
