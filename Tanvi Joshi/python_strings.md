@@ -23,4 +23,4 @@
 - You can also add new items at the end of the list, by using the append()
 ##### loops
 - range(0, 10, 3)
-   0, 3, 6, 9
+- 0, 3, 6, 9
