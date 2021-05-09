@@ -253,3 +253,4 @@ Arguments: spam eggs
 * `raise` statement forces an error. `from` can be used with this inside the `except` clause, to change the exception.
 * Custom exceptions can be created by making classes of exceptions.
 * The `finally` clause is executed whether or not there is an exception in `try`. 
+> 10-05-2021, 01:09 AM
