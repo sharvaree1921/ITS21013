@@ -1,4 +1,4 @@
-##### Strings:
+### Strings:
 - strings can be enclosed in single quotes ` '...' ` or double quotes ` "..." `
 - `\` is used to escape double quotes
 - The string is enclosed in double quotes if the string contains a single quote and no double quotes, otherwise it is enclosed in single quotes.
@@ -19,6 +19,7 @@
 [Functions](https://docs.python.org/3/library/stdtypes.html#string-methods "functions on strings")
 ##### lists:
 - they are mutable(elements can be changed), unlike strings
+- elements can be added to end of list using `list_name.append(element)1
 - The keyword argument end can be used to avoid the newline after the output
 - You can also add new items at the end of the list, by using the append()
 ##### loops
@@ -28,8 +29,28 @@
 - `print(range(10))`
 - gives `range(0, 10)`
 - `sum(range(4))` gives `6`
+- `print(range(10))` gives `range(0,10)`
+- `sum(range(4))` gives `6`
+- `list(range(4))` gives the complete as a list `[0,1,2,3]`
 - `break` causes loop to end abruptly, `continue` brings back to starting of loop, `pass` does nothing
 ##### functions:
 - defined by: `def function_name(parameters):`
--             `body`
--
+-             `body`(must be indented, 1st line may be a docstring)
+- functions with no return statement return `None` (can be visible using print)
+- cannot put non-keyword argument(positional) after a keyword argument in the function parameters when calling the function 
+- Example: `def parrot(voltage, state='a stiff', action='voom', type='Norwegian Blue'):`
+- `print("-- This parrot wouldn't", action, end=' ')`
+- `print("if you put", voltage, "volts through it.")`
+- `print("-- Lovely plumage, the", type)`
+- `print("-- It's", state, "!")`
+- `parrot(voltage=5.0, 'dead')` this call to the function is wrong
+- `*arguments` mean a set of strings as parameter, `**keywords` mean a set of variables which have been assigned a string each(printing the variable prints variable name, `keyword[variablename]` prints string assigned to variable
+- `def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):`
+- `    -----------    ----------     ----------`
+- `      |             |                  |`
+- `      |        Positional or keyword   |`
+- `      |                                - Keyword only`
+- `       -- Positional only` 
+- `lambda` keyword creates small anonymous function
+### Data Structures
+- `list.append(x)` adds x(element) to the end of list, `list,extend(list2)` add all elements from list2 to the end of list, `list.insert(i,x)` insert x at ith index, `list.remove(x)` remove 1st time x appears, `list.pop([i])` remove item at ith position and return it, `list.pop()` removes and returns last element, `list.clear()` remove all items from list, `list.index(x[, start[, end]])` return index of 1st x (start and end can limit the search to a subsequence of the list), `list.count(x)` times x appears, `list.sort(*, key=None, reverse=False)` sort items in place, `list.reverse()` reverse elements, `list.copy()` return copy of list.
