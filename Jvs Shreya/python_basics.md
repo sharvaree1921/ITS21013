@@ -184,7 +184,7 @@ Arguments: spam eggs
     And to access libs, use `import ITSP.python.libs`. Again, `from` ... `import` can be used.
  *  When * is used while importing a package, it will import all the sub-modules only if `__all__` is defined in `__init__.py`and it contains all the sub-modules. Else, it will import only till the package level.  
 
-    >__Note:- Using * to import all is *not* recommended.__
+    __Note:- Using * to import all is *not* recommended.__
  *   When a module is already imported from a package, but you want another module from same package, you can just use dots. `from . import func2`.
 > 09-05-2021, 00:21 AM
 
@@ -227,5 +227,10 @@ Arguments: spam eggs
 * IMPORTANT: Normally files are read in txt form. But any file which contains other than text, use `'b'` to read it in binary format.
 * Use `with` keyword to always close a file. Or use file.close() at end. But always close a file!
 * `f.read()` reads entire file. `f.readline()` - each line. `list(f)` and `f.readlines()` reads all. `f.write('bla\n')` returns number of bytes entered. `f.tell()` gives currnet (bytes)position. `f.seek(offset, whence)` changes current position to offset + starting point which is start if whence is 0, current if 1 and end if 2.  
-  seek doesn't work well with text only files.
+  * seek doesn't work well with text only files.
+* The **JSON** module helps in *serializing*(converts to strings i.e. text) and *deserializing*(decoding) data. The `jason.dumps()` returns string form of data. `jason.dump(x,f)` converts f to text file. `x = jason.load(f)` decodes it.
+> 09-05-2021, 12:10PM
+
+### 1.6 Errors and Exceptions
+* Exception:- Error which occurs while execution. Ex:- ZeroDivisionError, NameError and TypeError. [Built-in errors](https://docs.python.org/3/library/exceptions.html#bltin-exceptions) lists.
 * 
