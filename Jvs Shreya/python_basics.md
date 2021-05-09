@@ -233,4 +233,23 @@ Arguments: spam eggs
 
 ### 1.6 Errors and Exceptions
 * Exception:- Error which occurs while execution. Ex:- ZeroDivisionError, NameError and TypeError. [Built-in errors](https://docs.python.org/3/library/exceptions.html#bltin-exceptions) lists.
-* 
+* The `try` and `except` function help handle errors:
+  ```python
+  def divide(x, y):
+     try:
+         result = x / y
+     except ZeroDivisionError:
+         print("division by zero!")
+     else:
+         print("result is", result)
+     finally:
+         print("executing finally clause")
+  divide(2,1)
+  divide(2,0)
+  divide('y','t')
+  ```
+* The order in which except clauses are written matters. Especially when classes and subclasses are involved. `else:` can be used at end to include all other exceptions.(Note:- `pass` function might be useful here.)
+* Sometimes exceptions have an associated value called *argument* (`.args`). These are printed at the end as *detail*.
+* `raise` statement forces an error. `from` can be used with this inside the `except` clause, to change the exception.
+* Custom exceptions can be created by making classes of exceptions.
+* The `finally` clause is executed whether or not there is an exception in `try`. 
