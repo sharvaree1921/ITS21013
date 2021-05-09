@@ -22,5 +22,11 @@
 - The keyword argument end can be used to avoid the newline after the output
 - You can also add new items at the end of the list, by using the append()
 ##### loops
-- range(0, 10, 3)
-- 0, 3, 6, 9
+- `if/elif`
+- `range(0, 10, 3)` numbers from 0 to less than 10, incremented by 3; if instead of ,3 nothing is mentioned it means 1
+- gives `0, 3, 6, 9`
+- `print(range(10))`
+- gives `range(0, 10)`
+- `sum(range(4))` gives `6`
+- `break` causes loop to end abruptly, `continue` brings back to starting of loop, `pass` does nothing
+- 
