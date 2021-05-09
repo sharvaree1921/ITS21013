@@ -55,3 +55,5 @@
 ### Data Structures
 - `list.append(x)` adds x(element) to the end of list, `list,extend(list2)` add all elements from list2 to the end of list, `list.insert(i,x)` insert x at ith index, `list.remove(x)` remove 1st time x appears, `list.pop([i])` remove item at ith position and return it, `list.pop()` removes and returns last element, `list.clear()` remove all items from list, `list.index(x[, start[, end]])` return index of 1st x (start and end can limit the search to a subsequence of the list), `list.count(x)` times x appears, `list.sort(*, key=None, reverse=False)` sort items in place, `list.reverse()` reverse elements, `list.copy()` return copy of list.
 - `zip(*)` function
+- `del list[i]` deletes ith element from list, returns nothing, `del list[i:j]` deletes ith,..(j-1)th elements
+- 
