@@ -29,4 +29,7 @@
 - gives `range(0, 10)`
 - `sum(range(4))` gives `6`
 - `break` causes loop to end abruptly, `continue` brings back to starting of loop, `pass` does nothing
-- 
+##### functions:
+- defined by: `def function_name(parameters):`
+-             `body`
+-
