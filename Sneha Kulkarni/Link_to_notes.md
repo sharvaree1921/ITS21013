@@ -1,3 +1,3 @@
 ## Python notes:   
    [Data Structures and Module notes](https://colab.research.google.com/drive/1EJLwAT3klE6YTOljrPQU1U-E3sSUWroV?usp=sharing)  
-   [Formatting and File Objects notes](https://colab.research.google.com/drive/1FAFPMZIGelmdcz8M1EKccuHsnYqDRWAW?usp=sharing)  
+   [Formatting and File Objects, errors/exceptions notes](https://colab.research.google.com/drive/1FAFPMZIGelmdcz8M1EKccuHsnYqDRWAW?usp=sharing)  
