@@ -58,3 +58,5 @@
 - `del list[i]` deletes ith element from list, returns nothing, `del list[i:j]` deletes ith,..(j-1)th elements
 ##### Tuples
 - A tuple consists of a number of values separated by commas, immutable
+- sets curly, dictionaries square
+- 
