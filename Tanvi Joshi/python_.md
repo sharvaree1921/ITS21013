@@ -62,4 +62,5 @@
 -  dictionaries are indexed by keys(can be any immutatble type), output as in square brackets, `dict()` makes dictionaries from sequences of key-value pairs, `items()`, `enumerate()`
 - `and`> `or`> `not`
 - assignment inside expressions must be done explicitly with the walrus operator `:=`
+- `from fibo import *` imports all names except those beginning with an underscore (_)
 
