@@ -59,5 +59,7 @@
 
 - A tuple consists of a number of values separated by commas, immutable, printed inside ()
 - sets: curly brackets or `set()` function, no repetition of elements, to create an empty set use `set()` only, `{}` creates an empty dictionary
--  dictionaries square
-- 
+-  dictionaries are indexed by keys(can be any immutatble type), output as in square brackets, `dict()` makes dictionaries from sequences of key-value pairs, `items()`, `enumerate()`
+- `and`> `or`> `not`
+- assignment inside expressions must be done explicitly with the walrus operator `:=`
+
