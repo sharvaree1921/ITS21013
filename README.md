@@ -24,8 +24,8 @@ Try to make proper documentation of whatever you learn in your own words week-wi
 - [What is ML](https://pub.towardsai.net/what-is-machine-learning-ml-b58162f97ec7)
 - [Intro to ML](https://towardsdatascience.com/introduction-to-machine-learning-for-beginners-eed6024fdb08)
 - [A must read chapter on Neural Networks](http://neuralnetworksanddeeplearning.com/chap1.html)
-- [A super interesting *playlist* on Machine Learning and Deep Learning](https://www.youtube.com/playlist?list=PLZbbT5o_s2xq7LwI2y8_QtvuXZedL6tQU)
 - [Handwritten digits recongnition: A super cool and simplified explanation](https://www.youtube.com/playlist?list=PLDOKzIOovLSmoztVXF0ZmnqISUOlOrgMl)
+- [A super interesting *playlist* on Machine Learning and Deep Learning](https://www.youtube.com/playlist?list=PLZbbT5o_s2xq7LwI2y8_QtvuXZedL6tQU)
 - [An excellent SoS report by one of my friends summarizing all ML/DL concepts along with some extra cool stuff](https://drive.google.com/file/d/1PVXWR8xi891IYT0sAiXK236RRdcl8IoD/view?usp=sharing)
 
 Optional(Just in case of any doubts **or** for future reference):
