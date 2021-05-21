@@ -1,3 +1,5 @@
+[Colab Link to notes](https://colab.research.google.com/drive/19f19mYpHd2ibSDD4-dK2hoBbRew1thGJ?usp=sharing)
+
 # Python Libraries
 
 ## 1. NumPy
