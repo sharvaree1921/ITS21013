@@ -32,4 +32,9 @@ Optional(Just in case of any doubts **or** for future reference):
 - More Detailed ML tutorial by WnCC available [here](https://github.com/wncc/learners-space/tree/master/Machine%20Learning)
 - ML and DL course specialization by Andrew NG: [This](https://www.coursera.org/learn/machine-learning?utm_source=gg&utm_medium=sem&utm_campaign=07-StanfordML-IN&utm_content=07-StanfordML-IN&campaignid=1950458127&adgroupid=70479331563&device=c&keyword=andrew%20ng%20machine%20learning%20lectures&matchtype=b&network=g&devicemodel=&adpostion=&creativeid=351348153032&hide_mobile_promo&gclid=CjwKCAjwnPOEBhA0EiwA609ReWn_ETGcShmy4x_itvOlwTQPjSZ-1Q45CryCt93AcbspaUG0fAtn7RoCRPAQAvD_BwE) Coursera course(rather specialization) is considered as one of the very important course if one wants to pursue career in ML/AI field
 
-Note: Try to complete this before 5th June 2021
+#### Phase 3 (Basic implementation of the model)
+Try to implement these 3 tutorials. They are easy to go through
+
+- [Tensorflow 1](https://www.tensorflow.org/tutorials/keras/classification)
+- [CNN](https://www.tensorflow.org/tutorials/images/cnn)
+- [Image Classification](https://www.tensorflow.org/tutorials/images/classification)
