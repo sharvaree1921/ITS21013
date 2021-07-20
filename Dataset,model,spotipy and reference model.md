@@ -1,0 +1,4 @@
+- Dataset used           :  [fer2013.csv](https://drive.google.com/file/d/13pyFx5UlQ7Oed78K-F90o3QVl6neixXZ/view?usp=sharing)
+- Trained model          :  [trial7.h5](https://drive.google.com/file/d/1vaBGetfHpOKHa1J20uKb05scMRQkqrjH/view?usp=sharing)
+- Reference for spotipy  : [Welcome to Spotipy](https://spotipy.readthedocs.io/en/latest/)
+- Reference model        : [kaggle-fer project](https://drive.google.com/file/d/1VTkqygeo33QO-obDpCdsD2_bU0fUmR3N/view?usp=sharing)
